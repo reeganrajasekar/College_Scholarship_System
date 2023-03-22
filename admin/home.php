@@ -22,46 +22,93 @@
                         </h2>
                         <div id="collapse<?php echo($row["id"])?>" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
+                                <h5 class="text-secondary">Personal Details:</h5>
                                 <div class="row">
-                                    <div class="col-9">
                                         <div class="row">
-                                            <div class="col-6">
-                                                <p style="color:#aaa">Name : <span style="color:#444"><?php echo($row["name"]) ?></span></p>
-                                            </div>
-                                            <div class="col-6">
-                                                <p style="color:#aaa">DOB : <span style="color:#444"><?php echo($row["dob"]) ?></span></p>
-                                            </div>
-                                            <div class="col-6">
-                                                <p style="color:#aaa">Father Name : <span style="color:#444"><?php echo($row["fname"]) ?></span></p>
-                                            </div>
-                                            <div class="col-6">
-                                                <p style="color:#aaa">Mother Name : <span style="color:#444"><?php echo($row["mname"]) ?></span></p>
-                                            </div>
-                                            <div class="col-6">
-                                                <p style="color:#aaa">Gender : <span style="color:#444"><?php echo($row["gender"]) ?></span></p>
-                                            </div>
-                                            <div class="col-6">
-                                                <p style="color:#aaa">Mobile : <span style="color:#444"><?php echo($row["mobile"]) ?></span></p>
-                                            </div>
-                                            <div class="col-6">
-                                                <p style="color:#aaa">Email : <span style="color:#444"><?php echo($row["email"]) ?></span></p>
-                                            </div>
-                                            <div class="col-6">
-                                                <p style="color:#aaa">Address : <span style="color:#444"><?php echo($row["address"]) ?></span></p>
-                                            </div>
-                                            <div class="col-6">
-                                                <p style="color:#aaa">Nationality : <span style="color:#444"><?php echo($row["nan"]) ?></span></p>
-                                            </div>
-                                            <div class="col-6">
-                                                <p style="color:#aaa">Religion : <span style="color:#444"><?php echo($row["rel"]) ?></span></p>
-                                            </div>
-                                            <div class="col-6">
-                                                <p style="color:#aaa">Caste : <span style="color:#444"><?php echo($row["caste"]) ?></span></p>
-                                            </div>
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">Name : <span style="color:#444"><?php echo($row["name"]) ?></span></p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">DOB : <span style="color:#444"><?php echo($row["dob"]) ?></span></p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">Father Name : <span style="color:#444"><?php echo($row["fname"]) ?></span></p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">Mother Name : <span style="color:#444"><?php echo($row["mname"]) ?></span></p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">Gender : <span style="color:#444"><?php echo($row["gender"]) ?></span></p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">Mobile : <span style="color:#444"><?php echo($row["mobile"]) ?></span></p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">Email : <span style="color:#444"><?php echo($row["email"]) ?></span></p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">Aadhaar No : <span style="color:#444"><?php echo($row["aadhaar"]) ?></span></p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">Address : <span style="color:#444"><?php echo($row["address"]) ?></span></p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">Nationality : <span style="color:#444"><?php echo($row["nan"]) ?></span></p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">Religion : <span style="color:#444"><?php echo($row["rel"]) ?></span></p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">Caste : <span style="color:#444"><?php echo($row["caste"]) ?></span></p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">SubCaste : <span style="color:#444"><?php echo($row["subcaste"]) ?></span></p>
                                         </div>
                                     </div>
-                                    <div class="col-3">
-                                        <img src="/uploads/<?php echo($row["img"]) ?>" width="100%" alt="">
+                                </div>
+                                <hr>
+                                <h5 class="text-secondary">Educational Details:</h5>
+                                <div class="row">
+                                        <div class="row">
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">Type of Education : <span style="color:#444"><?php echo($row["typeofedu"]) ?></span></p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">Course : <span style="color:#444"><?php echo($row["course"]) ?></span></p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">Studying Year : <span style="color:#444"><?php echo($row["syear"]) ?></span></p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">Last Year Attedence : <span style="color:#444"><?php echo($row["lyearatt"]) ?> %</span></p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">Last Year Mark : <span style="color:#444"><?php echo($row["lyearmark"]) ?> %</span></p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">Physically Diabled : <span style="color:#444"><?php echo($row["physical"]) ?></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <h5 class="text-secondary">Bank Details:</h5>
+                                <div class="row">
+                                        <div class="row">
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">Bank : <span style="color:#444"><?php echo($row["bank"]) ?></span></p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">Branch : <span style="color:#444"><?php echo($row["branch"]) ?></span></p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">Account No : <span style="color:#444"><?php echo($row["accno"]) ?></span></p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">IFSC : <span style="color:#444"><?php echo($row["ifsc"]) ?></span></p>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p style="color:#aaa">MICR : <span style="color:#444"><?php echo($row["micr"]) ?></span></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
